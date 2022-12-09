@@ -10,6 +10,8 @@ java_basics
     3. Multiply hours by pay rate.
     4. Display results.
 
+## Type definitions in Java
+
 |  Name   | Default |  Size  |      Type      |      Example      |
 |:-------:|:-------:|:------:|:--------------:|:-----------------:|
 |  byte   |    0    | 8-bit  |    Integral    |   byte b = 100;   |
@@ -21,13 +23,44 @@ java_basics
 | boolean |  FALSE  | 1-bit  |    Boolean     | boolean b = true; |
 |  char   | '\u000' | 16-bit |   Character    |   char c ='C';    |
 
+***
+> While Java is a statically typed language, it offers type inference for local variables, which means we can declare a
+> variable as VAR and Java will infer the data type based on what is assigned to the variable. Let's take a look at an
+> example. As opposed to using boolean as the data type for the variable isWaterWet, we can use the word VAR. When using
+> VAR, you must initialize the variable at the time of declaration. Otherwise, Java is unable to infer what the data
+> type should actually be. 
 
-> While Java is a statically typed language, it offers type inference for local variables, which means we can declare a variable as VAR and Java will infer the data type based on what is assigned to the variable. Let's take a look at an example. As opposed to using boolean as the data type for the variable isWaterWet, we can use the word VAR. When using VAR, you must initialize the variable at the time of declaration. Otherwise, Java is unable to infer what the data type should actually be. Type inferences only allows for local variables. Local variables are variables that are declared within a method. You cannot use VAR for declaring a global variable, which is a variable that is defined at the class level outside of the methods of the class.
+> Type inferences only allows for local variables. Local variables are variables that are declared
+> within a method. You cannot use VAR for declaring a global variable, which is a variable that is defined at the class
+> level outside of the methods of the class.
+
 ## Local variable type inference
+
 ````
     public static void main(String[] args){
         var isWaterWet = true;
    }
 ````
-- Please be descriptive when you're naming your variables, methods, class, and packages. Anything that you name in programming, be descriptive of what it represents.
 
+- Be descriptive when you're naming your variables, methods, class, and packages. 
+- Anything that you name in programming, be descriptive of what it represents.
+
+***
+
+## Arithmetic Operators
+
+| Operator |                             Description                             | Example |
+|:--------:|:-------------------------------------------------------------------:|:-------:|
+|    +     |                       Adds two numeric values                       |  a + b  |
+|    -     |              Subtracts one numeric value from another               |  a - b  |
+|    *     |                    Multiplies two numeric values                    |  a * b  |
+|    /     |                Divides one numeric value by another                 |  a / b  |
+|    %     | Returns the remainder of dividing <br> one numeric value by another |  a % b  |
+
+***
+# CHAHLLENGE:
+## create a fill-in-the-blanks story program
+On a `adjective` `season` day,
+I drink a minimum of `number` cups
+of coffee.
+***
