@@ -91,9 +91,20 @@ gitGraph:
 
 # Challenge: Change for a dollar game
 
-> The objective of the game is to enter enough change to equal exactly one U.S. dollar. Feel free to change this game for
+> The objective of the game is to enter enough change to equal exactly one U.S. dollar. Feel free to change this game
+> for
 > your country's currency. It still works. Create a program that asks the user to enter the quantities of the following
-> coins. You'll ask them how many pennies they would like, how many nickels, how many dimes, and how many quarters. Then,
-> your program is going to count the value of all of the change that they suggested. If the change equals exactly one U.S.
+> coins. You'll ask them how many pennies they would like, how many nickels, how many dimes, and how many quarters.
+> Then,
+> your program is going to count the value of all of the change that they suggested. If the change equals exactly one
+> U.S.
 > dollar, then they win the game. If it's more than one U.S. dollar, then tell them that it's more than $1 and how much
 > they went over. If it's less than one U.S. dollar, tell them how much they went under.
+***
+
+# Challenge: Roll the die game
+In this challenge, I'll exercise my knowledge of loops by creating a Roll the Die game. The
+objective of this game is to travel the entire game board of 20 spaces within five die rolls. Note that a die has six
+sides, and each side contains a number between one and six. My program will automatically roll the die and advance the
+player that number of spaces on the game board. 
+
