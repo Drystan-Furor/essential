@@ -2,9 +2,11 @@ package javabasics.roldiegame;
 
 import java.util.Random;
 
+import static java.lang.Thread.sleep;
+
 public class RollDieGame {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int lastSpace = 20;
         int currentSpace = 0;
         int maxRolls = 5;
@@ -19,6 +21,7 @@ public class RollDieGame {
             currentSpace = currentSpace + die;
 
             System.out.print(String.format("Roll #%d: You've rolled a natural %d. ", i, die));
+            sleep(3000);
 
             if (currentSpace == lastSpace) {
                 System.out.print("You rolled for Critical " + currentSpace + ". CritRole'd that, Achiever!");
@@ -29,11 +32,12 @@ public class RollDieGame {
             } else if (i == maxRolls && currentSpace < lastSpace) {
                 System.out.println("Location: square " + currentSpace + ".");
                 System.out.println("Game over! You're not throwing rocks tonight. Mark it Dude... You needed  " +
-                        lastSpace + "more spaces!");
+                        lastSpace + " more spaces!");
             } else {
                 int spacesToGo = lastSpace - currentSpace;
                 System.out.print("You are now on square " + currentSpace +
                         " and have " + spacesToGo + " more to go.");
+                sleep(3000);
             }
 
             System.out.println();
