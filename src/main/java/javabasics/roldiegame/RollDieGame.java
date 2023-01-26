@@ -12,7 +12,7 @@ public class RollDieGame {
         int maxRolls = 5;
         Random random = new Random();
 
-        System.out.println("This is: Roll the Die! Roll for Critical");
+        System.out.println("This is: Critical Roll! Roll for Critical");
 
 // For Loop this
         for (int i = 1; i <= maxRolls; i++) {
